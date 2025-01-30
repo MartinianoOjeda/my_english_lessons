@@ -1,0 +1,28 @@
+---
+interface Props {
+  class: string
+}
+const { class: className, ...rest } = Astro.props;
+---
+
+<svg class={className} {...rest}
+  viewBox="0,0,256,256" width="30px" height="30px">
+  <g fill="none" fill-rule="nonzero" stroke="none" stroke-width="1" 
+    stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" 
+    stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" 
+    style="mix-blend-mode: normal">
+  <g transform="scale(5.12,5.12)">
+  <path d="M18.5,45c-6.893,0 -12.5,-5.607 -12.5,-12.5c0,-6.893 5.607,-12.5 12.5,-12.5v4c-4.687,0 -8.5,3.813 -8.5,8.5c0,4.687 3.813,8.5 8.5,8.5c4.687,0 8.5,-3.813 8.5,-8.5v-27.5h4v27.5c0,6.893 -5.607,12.5 -12.5,12.5z" 
+    fill="#00f2ea">
+  </path>
+  <path d="M41,19c-6.113,0 -14,-6.789 -14,-14h4c0,4.732 5.961,10 10,10z" fill="#00f2ea">
+  </path>
+  <path d="M23.5,47c-6.893,0 -12.5,-5.607 -12.5,-12.5c0,-6.893 5.607,-12.5 12.5,-12.5v4c-4.687,0 -8.5,3.813 -8.5,8.5c0,4.687 3.813,8.5 8.5,8.5c4.687,0 8.5,-3.813 8.5,-8.5v-27.5h4v27.5c0,6.893 -5.607,12.5 -12.5,12.5z" 
+    fill="#ff0050">
+  </path>
+  <path d="M46,21c-6.113,0 -14,-6.789 -14,-14h4c0,4.732 5.961,10 10,10z" fill="#ff0050"></path>
+  <path d="M20.5,47c-6.893,0 -12.5,-5.607 -12.5,-12.5c0,-6.893 5.607,-12.5 12.5,-12.5v4c-4.687,0 -8.5,3.813 -8.5,8.5c0,4.687 3.813,8.5 8.5,8.5c4.687,0 8.5,-3.813 8.5,-8.5v-27.5h4v27.5c0,6.893 -5.607,12.5 -12.5,12.5z"
+    fill="#000000"></path>
+  <path d="M43,21c-6.113,0 -14,-6.789 -14,-14h4c0,4.732 5.961,10 10,10z" fill="#000000"></path>
+  </g></g>
+</svg>

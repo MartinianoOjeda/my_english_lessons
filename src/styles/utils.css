@@ -1,0 +1,53 @@
+:root {
+  /* #################### SCREEN #################### */
+  /* breakpoints */
+  --mobile: 480px;
+  --tablet: 768px;
+  --desktop: 1024px;
+
+  /* #################### TYPOGRAPHY #################### */
+  --font-family: 'Urbanist Variable', sans-serif;
+  --font-style: normal;
+
+  /* Weights */
+  --font-weight-regular: 500;
+  --font-weight-medium: 700;    
+  --font-weight-bold: 900;
+
+  /* Sizes */
+  --font-size-h1: 4rem;
+  --font-size-h1-mobile: 3.5rem;
+  --font-size-h2: 2.8125rem;
+  --font-size-h3: 2rem;
+  --font-size-h4: 1.4375rem;
+  --font-size-body: 1rem;
+  --font-size-body-sm: 0.75rem;
+  --font-size-caption: .6875rem;
+  --font-size-tiny: .5rem;
+
+
+  /* #################### ANIMATION #################### */
+
+  /* Button */
+  --transition-btn: all 0.3s ease;
+
+  /* Header */
+  --transition-header: all .3s ease;
+  --transition-dropdown: all .3s ease;
+
+  --transition-nav: height .5s ease, display .5s ease allow-discrete;
+  
+  --animation-time-s: .3s;
+  --animation-time-l: .5s;
+
+
+  --blur-header: blur(12px);
+
+}
+  
+/* #################### RESPOSIVE #################### */
+/* TABLET */
+@media (width > 480px) { }
+
+/* DESKTOP */
+@media (width >= 1024px) { }

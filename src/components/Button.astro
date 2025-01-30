@@ -1,0 +1,77 @@
+---
+interface Props {
+  textBtn: string;
+  class: string
+}
+const { class: className, textBtn, ...rest } = Astro.props;
+---
+
+<button class='special-btn'>
+  {textBtn}
+</button>
+
+
+<style>
+
+  .special-btn {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: var(--height-btn-lg);
+    padding-inline: var(--padding-inline-btn);
+    padding-block: var(--padding-block-btn);
+    font-weight: var(--font-weight-medium);
+    background-color: var(--color-bg-btn-special);
+    background-image: linear-gradient(to right, var(--color-bg-btn-special-1), var(--color-bg-btn-special-2));
+    border: none;
+    border-radius: var(--border-radius-special-btn);
+    color: var(--color-btn-text);
+    cursor: pointer;
+    transition: var(--transition-btn);
+    
+    &:hover {
+      background-image: linear-gradient(to right, hsl(var(--accent-1)), hsl(var(--accent-2)));
+      color: hsl(var(--primary));
+    }
+
+    &:hover::before {
+      background-image: conic-gradient(from var(--angle), hsl(var(--secondary)),transparent, hsl(var(--accent-2)), transparent, hsl(var(--secondary)));
+    }
+
+	}
+
+  .special-btn::before {
+    position: absolute;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+    content: '';
+		height: calc(100% + var(--padding-special-btn));
+		width: calc(100% + var(--padding-special-btn));
+    border: none;
+    border-radius: var(--border-radius-special-btn-bg);
+    background-image: conic-gradient(
+      from var(--angle), hsl(var(--primary)),transparent, 
+      hsl(var(--accent-1)), transparent, hsl(var(--primary)));
+		animation: 6s spin linear infinite;
+    z-index: -1;
+    transition: var(--transition-btn);
+  }
+
+  @property --angle {
+		syntax: '<angle>';
+		initial-value: 0deg;
+		inherits: false;
+	}
+
+  @keyframes spin {
+		from{
+			--angle: 0deg;
+		}
+		to{
+			--angle: 360deg;
+		}
+	}
+
+</style>

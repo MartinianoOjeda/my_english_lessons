@@ -1,0 +1,41 @@
+:root {
+    /* #################### SPACING #################### */
+    --padding-inline-body-mobile: 1rem; /* 8px */
+    --padding-inline-body-tablet: 2rem ; /* 32px */
+    --padding-inline-body-desktop: 24%; /* 64px */
+
+
+    /* Button */
+    --height-btn-lg: 3.375rem; /* 54px */
+    --padding-inline-btn: 2rem; /* 16px */
+    --padding-block-btn: .5rem; /* 8px */
+
+    --border-radius-btn-sm: .5rem; /* 8px */
+    --border-radius-btn-md: 1rem; /* 16px */
+    --border-radius-btn-lg: 3rem; /* 48px */
+
+    /* Special Btn */
+    --padding-special-btn: .5rem; /* 32px animated border weight*/
+    --border-radius-special-btn: 3rem; /* 48px */
+    --border-radius-special-btn-bg: calc(var(--border-radius-special-btn) + var(--padding-special-btn)); /* 48px */
+
+
+    /* Icon Size */
+    --size-icon-lg: 2rem; /* 32px */
+    --size-icon-md: 1.5rem; /* 24px */
+    
+    /* Header */
+    --height-header: 4rem; /* 96px */
+    --padding-inline-header-mobile: var(--padding-inline-body-mobile);
+    --padding-block-header-mobile: var(--padding-inline-body-mobile);
+
+    --padding-inline-header-tablet: var(--padding-inline-body-tablet);
+    --padding-block-header-tablet: var(--padding-inline-body-tablet);
+
+    --padding-inline-header-desktop: var(--padding-inline-body-desktop);
+    --padding-block-header-desktop: var(--padding-inline-body-desktop);
+
+    --padding-option-menu: 1rem; /* 16px */
+
+    --height-nav-mobile: calc(100dvh - var(--height-header));
+  }

@@ -1,0 +1,47 @@
+:root {
+
+  /* #################### COLORS PALETTE #################### */
+  color-scheme: light dark;
+  --primary: 220, 70%, 17%;
+  --secondary: 354, 99%, 38%;
+  --accent-1: 189, 43%, 56%;
+  --accent-2: 15, 87%, 85%;
+  --neutral: 180, 5%, 31%;
+
+
+
+  --light: 14, 87%, 97%;
+  --dark: 180, 6%, 13%;
+
+  --dark-1: hsl(0, 0%, 5%);
+  --dark: 0, 0%, 8%;
+
+
+  --color-bg-body: light-dark(hsl(var(--light)), hsl(var(--dark)));
+  --color-text: light-dark(hsl(var(--primary)), hsl(var(--light)));
+
+  /* Button */
+  --color-btn-text: hsl(var(--light));
+
+  --color-bg-btn-special-1: hsl(var(--primary));
+  --color-bg-btn-special-2: hsl(var(--accent-1));
+
+  /* Header */
+  --color-bg-header: light-dark(hsla(var(--accent-1), 0.7), hsla(var(--primary), 0.7));
+  --color-bg-nav: light-dark(hsl(var(--accent-1)), hsl(var(--primary)));
+
+  --color-option-menu: light-dark(hsl(var(--primary)), hsl(var(--light)));
+  --color-option-menu-hover: light-dark(hsl(var(--light)), hsl(var(--accent-1)));
+
+
+  /* Redes */
+  --mel-color: linear-gradient(45deg, #0D2149, #5EB1BF, #C20114);
+  --instagram-color: linear-gradient(45deg, #405de6, #5851db, #833ab4, #c13584, #e1306c, #fd1d1d);
+  --tiktok-shawow: 1px 1px #ff0050, -1px -1px #00f2ea;
+  --whatsapp-color: #40c351;
+  --whatsapp-border: 1px 0 #fff, -1px 0 #fff, 0 1px #fff, 0 -1px #fff, 1px 1px #fff, -1px -1px #fff, 1px -1px #fff, -1px 1px #fff;
+
+  /* Icons */
+  --color-icon: light-dark(hsl(var(--primary)), hsl(var(--light)));
+
+}
